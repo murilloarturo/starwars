@@ -16,6 +16,25 @@
 		698F9032231C02F000085CF1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9030231C02F000085CF1 /* HomeViewController.swift */; };
 		698F9033231C02F000085CF1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698F9031231C02F000085CF1 /* HomeViewController.xib */; };
 		698F9035231C02FC00085CF1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9034231C02FC00085CF1 /* HomeCoordinator.swift */; };
+		698F903D231C0C3200085CF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 698F903F231C0C3200085CF1 /* Localizable.strings */; };
+		698F9043231C0C5C00085CF1 /* LocalizableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9042231C0C5C00085CF1 /* LocalizableString.swift */; };
+		698F9046231C0E3900085CF1 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9045231C0E3900085CF1 /* UIViewController+Utils.swift */; };
+		698F9049231C0F8900085CF1 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9048231C0F8900085CF1 /* AppStyle.swift */; };
+		698F904B231C0FB100085CF1 /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F904A231C0FB100085CF1 /* UIFont+Style.swift */; };
+		698F904D231C0FBD00085CF1 /* UIColor+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F904C231C0FBD00085CF1 /* UIColor+Style.swift */; };
+		698F905B231C101700085CF1 /* SFUIText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F904F231C101600085CF1 /* SFUIText-Light.ttf */; };
+		698F905C231C101700085CF1 /* SFUIText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9050231C101600085CF1 /* SFUIText-BoldItalic.ttf */; };
+		698F905D231C101700085CF1 /* SFUIText-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9051231C101600085CF1 /* SFUIText-HeavyItalic.ttf */; };
+		698F905E231C101700085CF1 /* SFUIText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9052231C101600085CF1 /* SFUIText-Heavy.ttf */; };
+		698F905F231C101700085CF1 /* SFUIText-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9053231C101600085CF1 /* SFUIText-LightItalic.ttf */; };
+		698F9060231C101700085CF1 /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9054231C101600085CF1 /* SFUIText-Medium.ttf */; };
+		698F9061231C101700085CF1 /* SFUIText-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9055231C101600085CF1 /* SFUIText-MediumItalic.ttf */; };
+		698F9062231C101700085CF1 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9056231C101600085CF1 /* SFUIText-Bold.ttf */; };
+		698F9063231C101700085CF1 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9057231C101600085CF1 /* SFUIText-Regular.ttf */; };
+		698F9064231C101700085CF1 /* SFUIText-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9058231C101700085CF1 /* SFUIText-SemiboldItalic.ttf */; };
+		698F9065231C101700085CF1 /* SFUIText-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9059231C101700085CF1 /* SFUIText-RegularItalic.ttf */; };
+		698F9066231C101700085CF1 /* SFUIText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F905A231C101700085CF1 /* SFUIText-Semibold.ttf */; };
+		698F9068231C175E00085CF1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9067231C175E00085CF1 /* BaseNavigationController.swift */; };
 		A04E872FB79A16713B2E324A /* libPods-RebellionTripsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +63,27 @@
 		698F9030231C02F000085CF1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		698F9031231C02F000085CF1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		698F9034231C02FC00085CF1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		698F903C231C0C2B00085CF1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		698F903E231C0C3200085CF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		698F9040231C0C3600085CF1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		698F9042231C0C5C00085CF1 /* LocalizableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableString.swift; sourceTree = "<group>"; };
+		698F9045231C0E3900085CF1 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		698F9048231C0F8900085CF1 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		698F904A231C0FB100085CF1 /* UIFont+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Style.swift"; sourceTree = "<group>"; };
+		698F904C231C0FBD00085CF1 /* UIColor+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Style.swift"; sourceTree = "<group>"; };
+		698F904F231C101600085CF1 /* SFUIText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.ttf"; sourceTree = "<group>"; };
+		698F9050231C101600085CF1 /* SFUIText-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-BoldItalic.ttf"; sourceTree = "<group>"; };
+		698F9051231C101600085CF1 /* SFUIText-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		698F9052231C101600085CF1 /* SFUIText-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Heavy.ttf"; sourceTree = "<group>"; };
+		698F9053231C101600085CF1 /* SFUIText-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-LightItalic.ttf"; sourceTree = "<group>"; };
+		698F9054231C101600085CF1 /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
+		698F9055231C101600085CF1 /* SFUIText-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-MediumItalic.ttf"; sourceTree = "<group>"; };
+		698F9056231C101600085CF1 /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
+		698F9057231C101600085CF1 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		698F9058231C101700085CF1 /* SFUIText-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		698F9059231C101700085CF1 /* SFUIText-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-RegularItalic.ttf"; sourceTree = "<group>"; };
+		698F905A231C101700085CF1 /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Semibold.ttf"; sourceTree = "<group>"; };
+		698F9067231C175E00085CF1 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		7FAA28F06D8DE44268ACE86A /* libPods-RebellionTrips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTrips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		900D25380710B50EAEB55CC6 /* Pods-RebellionTrips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebellionTrips.release.xcconfig"; path = "Target Support Files/Pods-RebellionTrips/Pods-RebellionTrips.release.xcconfig"; sourceTree = "<group>"; };
 		C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTripsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +172,7 @@
 			children = (
 				698F902B231C01DB00085CF1 /* Coordinator */,
 				698F902C231C01E600085CF1 /* Modules */,
+				698F9036231C094900085CF1 /* Utils */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -139,8 +180,10 @@
 		698F9028231C017E00085CF1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				698F904E231C0FF200085CF1 /* Fonts */,
 				698F900B231BFD1900085CF1 /* Assets.xcassets */,
 				698F900D231BFD1900085CF1 /* LaunchScreen.storyboard */,
+				698F903F231C0C3200085CF1 /* Localizable.strings */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -185,6 +228,62 @@
 				698F9031231C02F000085CF1 /* HomeViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		698F9036231C094900085CF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				698F9047231C0F7E00085CF1 /* Style */,
+				698F9044231C0CF000085CF1 /* Navigation */,
+				698F9041231C0C4E00085CF1 /* Language */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		698F9041231C0C4E00085CF1 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				698F9042231C0C5C00085CF1 /* LocalizableString.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		698F9044231C0CF000085CF1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				698F9045231C0E3900085CF1 /* UIViewController+Utils.swift */,
+				698F9067231C175E00085CF1 /* BaseNavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		698F9047231C0F7E00085CF1 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				698F9048231C0F8900085CF1 /* AppStyle.swift */,
+				698F904A231C0FB100085CF1 /* UIFont+Style.swift */,
+				698F904C231C0FBD00085CF1 /* UIColor+Style.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		698F904E231C0FF200085CF1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				698F9056231C101600085CF1 /* SFUIText-Bold.ttf */,
+				698F9050231C101600085CF1 /* SFUIText-BoldItalic.ttf */,
+				698F9052231C101600085CF1 /* SFUIText-Heavy.ttf */,
+				698F9051231C101600085CF1 /* SFUIText-HeavyItalic.ttf */,
+				698F904F231C101600085CF1 /* SFUIText-Light.ttf */,
+				698F9053231C101600085CF1 /* SFUIText-LightItalic.ttf */,
+				698F9054231C101600085CF1 /* SFUIText-Medium.ttf */,
+				698F9055231C101600085CF1 /* SFUIText-MediumItalic.ttf */,
+				698F9057231C101600085CF1 /* SFUIText-Regular.ttf */,
+				698F9059231C101700085CF1 /* SFUIText-RegularItalic.ttf */,
+				698F905A231C101700085CF1 /* SFUIText-Semibold.ttf */,
+				698F9058231C101700085CF1 /* SFUIText-SemiboldItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		EFD600B4C10F5E8D5112835D /* Pods */ = {
@@ -264,6 +363,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 698F8FF8231BFD1800085CF1;
 			productRefGroup = 698F9002231BFD1800085CF1 /* Products */;
@@ -281,9 +381,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698F905B231C101700085CF1 /* SFUIText-Light.ttf in Resources */,
+				698F905C231C101700085CF1 /* SFUIText-BoldItalic.ttf in Resources */,
 				698F900F231BFD1900085CF1 /* LaunchScreen.storyboard in Resources */,
+				698F903D231C0C3200085CF1 /* Localizable.strings in Resources */,
+				698F905E231C101700085CF1 /* SFUIText-Heavy.ttf in Resources */,
 				698F900C231BFD1900085CF1 /* Assets.xcassets in Resources */,
+				698F905D231C101700085CF1 /* SFUIText-HeavyItalic.ttf in Resources */,
 				698F9033231C02F000085CF1 /* HomeViewController.xib in Resources */,
+				698F9061231C101700085CF1 /* SFUIText-MediumItalic.ttf in Resources */,
+				698F9066231C101700085CF1 /* SFUIText-Semibold.ttf in Resources */,
+				698F905F231C101700085CF1 /* SFUIText-LightItalic.ttf in Resources */,
+				698F9065231C101700085CF1 /* SFUIText-RegularItalic.ttf in Resources */,
+				698F9060231C101700085CF1 /* SFUIText-Medium.ttf in Resources */,
+				698F9064231C101700085CF1 /* SFUIText-SemiboldItalic.ttf in Resources */,
+				698F9062231C101700085CF1 /* SFUIText-Bold.ttf in Resources */,
+				698F9063231C101700085CF1 /* SFUIText-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +461,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698F904D231C0FBD00085CF1 /* UIColor+Style.swift in Sources */,
 				698F902E231C026200085CF1 /* Coordinator.swift in Sources */,
 				698F9035231C02FC00085CF1 /* HomeCoordinator.swift in Sources */,
+				698F9046231C0E3900085CF1 /* UIViewController+Utils.swift in Sources */,
 				698F9005231BFD1800085CF1 /* AppDelegate.swift in Sources */,
+				698F9043231C0C5C00085CF1 /* LocalizableString.swift in Sources */,
 				698F9032231C02F000085CF1 /* HomeViewController.swift in Sources */,
+				698F904B231C0FB100085CF1 /* UIFont+Style.swift in Sources */,
+				698F9068231C175E00085CF1 /* BaseNavigationController.swift in Sources */,
+				698F9049231C0F8900085CF1 /* AppStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,8 +497,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				698F900E231BFD1900085CF1 /* Base */,
+				698F903C231C0C2B00085CF1 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		698F903F231C0C3200085CF1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				698F903E231C0C3200085CF1 /* en */,
+				698F9040231C0C3600085CF1 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -389,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -450,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

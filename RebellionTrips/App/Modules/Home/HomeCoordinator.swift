@@ -19,7 +19,7 @@ final class HomeCoordinator: NSObject, Coordinator {
     
     func start() {
         let viewController = HomeViewController()
-        navigation = UINavigationController(rootViewController: viewController)
+        navigation = BaseNavigationController(rootViewController: viewController)
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()
     }
