@@ -49,6 +49,13 @@
 		698F908D231C363C00085CF1 /* TripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698F908B231C363B00085CF1 /* TripCell.xib */; };
 		698F908F231C3AA700085CF1 /* UIImageView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F908E231C3AA700085CF1 /* UIImageView+Network.swift */; };
 		698F9092231C3CB700085CF1 /* UICollectionView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9091231C3CB700085CF1 /* UICollectionView+Nib.swift */; };
+		698F9097231C42B300085CF1 /* RatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698F9096231C42B300085CF1 /* RatingView.xib */; };
+		698F9099231C42C600085CF1 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9098231C42C600085CF1 /* UIView+Nib.swift */; };
+		698F909B231C43A400085CF1 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F909A231C43A400085CF1 /* RatingView.swift */; };
+		698F909D231C46ED00085CF1 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F909C231C46ED00085CF1 /* StarView.swift */; };
+		698F909F231C46F500085CF1 /* StarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698F909E231C46F500085CF1 /* StarView.xib */; };
+		698F90A1231C4CB800085CF1 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F90A0231C4CB800085CF1 /* UIView+Constraints.swift */; };
+		698F90A3231C639800085CF1 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F90A2231C639800085CF1 /* XibView.swift */; };
 		A04E872FB79A16713B2E324A /* libPods-RebellionTripsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +119,13 @@
 		698F908B231C363B00085CF1 /* TripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripCell.xib; sourceTree = "<group>"; };
 		698F908E231C3AA700085CF1 /* UIImageView+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Network.swift"; sourceTree = "<group>"; };
 		698F9091231C3CB700085CF1 /* UICollectionView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Nib.swift"; sourceTree = "<group>"; };
+		698F9096231C42B300085CF1 /* RatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView.xib; sourceTree = "<group>"; };
+		698F9098231C42C600085CF1 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		698F909A231C43A400085CF1 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		698F909C231C46ED00085CF1 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		698F909E231C46F500085CF1 /* StarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StarView.xib; sourceTree = "<group>"; };
+		698F90A0231C4CB800085CF1 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		698F90A2231C639800085CF1 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
 		7FAA28F06D8DE44268ACE86A /* libPods-RebellionTrips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTrips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		900D25380710B50EAEB55CC6 /* Pods-RebellionTrips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebellionTrips.release.xcconfig"; path = "Target Support Files/Pods-RebellionTrips/Pods-RebellionTrips.release.xcconfig"; sourceTree = "<group>"; };
 		C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTripsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +281,7 @@
 		698F9036231C094900085CF1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				698F9093231C429B00085CF1 /* Components */,
 				698F9090231C3CA900085CF1 /* UIKit */,
 				698F9072231C200100085CF1 /* Network */,
 				698F9047231C0F7E00085CF1 /* Style */,
@@ -372,8 +387,22 @@
 			isa = PBXGroup;
 			children = (
 				698F9091231C3CB700085CF1 /* UICollectionView+Nib.swift */,
+				698F9098231C42C600085CF1 /* UIView+Nib.swift */,
+				698F90A0231C4CB800085CF1 /* UIView+Constraints.swift */,
+				698F90A2231C639800085CF1 /* XibView.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		698F9093231C429B00085CF1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				698F909A231C43A400085CF1 /* RatingView.swift */,
+				698F9096231C42B300085CF1 /* RatingView.xib */,
+				698F909C231C46ED00085CF1 /* StarView.swift */,
+				698F909E231C46F500085CF1 /* StarView.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		EFD600B4C10F5E8D5112835D /* Pods */ = {
@@ -483,11 +512,13 @@
 				698F9061231C101700085CF1 /* SFUIText-MediumItalic.ttf in Resources */,
 				698F9066231C101700085CF1 /* SFUIText-Semibold.ttf in Resources */,
 				698F905F231C101700085CF1 /* SFUIText-LightItalic.ttf in Resources */,
+				698F909F231C46F500085CF1 /* StarView.xib in Resources */,
 				698F9065231C101700085CF1 /* SFUIText-RegularItalic.ttf in Resources */,
 				698F9060231C101700085CF1 /* SFUIText-Medium.ttf in Resources */,
 				698F9064231C101700085CF1 /* SFUIText-SemiboldItalic.ttf in Resources */,
 				698F9062231C101700085CF1 /* SFUIText-Bold.ttf in Resources */,
 				698F9063231C101700085CF1 /* SFUIText-Regular.ttf in Resources */,
+				698F9097231C42B300085CF1 /* RatingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,12 +585,15 @@
 			files = (
 				698F9081231C2C5D00085CF1 /* Distance.swift in Sources */,
 				698F906F231C1A3100085CF1 /* Trip.swift in Sources */,
+				698F909D231C46ED00085CF1 /* StarView.swift in Sources */,
 				698F904D231C0FBD00085CF1 /* UIColor+Style.swift in Sources */,
 				698F902E231C026200085CF1 /* Coordinator.swift in Sources */,
 				698F9035231C02FC00085CF1 /* HomeCoordinator.swift in Sources */,
+				698F90A1231C4CB800085CF1 /* UIView+Constraints.swift in Sources */,
 				698F9046231C0E3900085CF1 /* UIViewController+Utils.swift in Sources */,
 				698F9084231C322200085CF1 /* HomeService.swift in Sources */,
 				698F9005231BFD1800085CF1 /* AppDelegate.swift in Sources */,
+				698F909B231C43A400085CF1 /* RatingView.swift in Sources */,
 				698F907F231C2BFF00085CF1 /* TripEvent.swift in Sources */,
 				698F9076231C204100085CF1 /* ServiceClient.swift in Sources */,
 				698F9043231C0C5C00085CF1 /* LocalizableString.swift in Sources */,
@@ -571,9 +605,11 @@
 				698F904B231C0FB100085CF1 /* UIFont+Style.swift in Sources */,
 				698F9089231C362800085CF1 /* HomeDataSource.swift in Sources */,
 				698F908F231C3AA700085CF1 /* UIImageView+Network.swift in Sources */,
+				698F90A3231C639800085CF1 /* XibView.swift in Sources */,
 				698F9086231C34EE00085CF1 /* HomeModule.swift in Sources */,
 				698F9068231C175E00085CF1 /* BaseNavigationController.swift in Sources */,
 				698F907B231C2B6500085CF1 /* Pilot.swift in Sources */,
+				698F9099231C42C600085CF1 /* UIView+Nib.swift in Sources */,
 				698F9049231C0F8900085CF1 /* AppStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

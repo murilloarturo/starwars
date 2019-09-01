@@ -60,6 +60,7 @@ extension HomeDataSource: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 88)
+        let trip = trips[indexPath.row]
+        return CGSize(width: collectionView.bounds.width, height: trip.pilot.hasRating ? 100 : 88)
     }
 }

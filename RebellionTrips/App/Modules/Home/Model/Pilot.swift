@@ -20,6 +20,10 @@ final class Pilot: Codable {
         return URL(string: url)
     }
     
+    var hasRating: Bool {
+        return rating > 0
+    }
+    
     enum CodingKeys: String, CodingKey {
         case name
         case avatarPath = "avatar"

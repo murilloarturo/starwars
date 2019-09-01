@@ -39,7 +39,8 @@ class TripCell: UICollectionViewCell {
             arrowImageView.image = image
         }
     }
-    
+    @IBOutlet private weak var ratingView: RatingView!
+    @IBOutlet private weak var ratingHeightConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -59,7 +60,13 @@ private extension TripCell {
             pilotImageView.download(url: url)
         }
         pilotNameLabel.text = pilot.name
-        //rating
+        let hasRating = pilot.hasRating
+        if hasRating {
+            ratingHeightConstraint.constant = 25
+            ratingView.update(rating: pilot.rating)
+        } else {
+            ratingHeightConstraint.constant = 0
+        }
     }
     
     func update(pickUp: TripEvent) {
