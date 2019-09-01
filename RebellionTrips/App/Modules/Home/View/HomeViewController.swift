@@ -7,9 +7,23 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class HomeViewController: UIViewController {
-
+    @IBOutlet weak var label: UILabel!
+    private let viewModel: HomeViewModel
+    private let disposeBag = DisposeBag()
+    
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: String(describing: HomeViewController.self), bundle: Bundle.main)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        return nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +34,16 @@ class HomeViewController: UIViewController {
 private extension HomeViewController {
     func setup() {
         title = LocalizableString.lastTrips.localized.uppercased()
-        customNavigation()
+        bind()
+        viewModel.fetchTrips()
+    }
+    
+    func bind() {
+        viewModel
+            .trips
+            .drive(onNext: { [weak self] (trips) in
+                self?.label.text = "\(trips.count)"
+            })
+            .disposed(by: disposeBag)
     }
 }

@@ -18,7 +18,7 @@ final class HomeCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-        let viewController = HomeViewController()
+        let viewController = HomeModule().homeViewController()
         navigation = BaseNavigationController(rootViewController: viewController)
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()

@@ -10,6 +10,7 @@ import Foundation
 
 enum LocalizableString: String {
     case lastTrips
+    case errorOccurred
     
     var localized: String {
         return localize()

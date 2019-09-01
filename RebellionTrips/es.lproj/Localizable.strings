@@ -7,3 +7,4 @@
 */
 
 "lastTrips" = "Últimos viajes";
+"errorOccurred" = "Ocurrió un error obteniendo la información, intenta nuevamente.";

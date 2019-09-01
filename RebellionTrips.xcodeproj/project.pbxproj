@@ -35,6 +35,15 @@
 		698F9065231C101700085CF1 /* SFUIText-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F9059231C101700085CF1 /* SFUIText-RegularItalic.ttf */; };
 		698F9066231C101700085CF1 /* SFUIText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698F905A231C101700085CF1 /* SFUIText-Semibold.ttf */; };
 		698F9068231C175E00085CF1 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9067231C175E00085CF1 /* BaseNavigationController.swift */; };
+		698F906F231C1A3100085CF1 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F906E231C1A3100085CF1 /* Trip.swift */; };
+		698F9071231C1A3A00085CF1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9070231C1A3A00085CF1 /* HomeViewModel.swift */; };
+		698F9076231C204100085CF1 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9075231C204100085CF1 /* ServiceClient.swift */; };
+		698F9079231C23F000085CF1 /* JSONDecoder+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9078231C23F000085CF1 /* JSONDecoder+Codable.swift */; };
+		698F907B231C2B6500085CF1 /* Pilot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F907A231C2B6500085CF1 /* Pilot.swift */; };
+		698F907F231C2BFF00085CF1 /* TripEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F907E231C2BFF00085CF1 /* TripEvent.swift */; };
+		698F9081231C2C5D00085CF1 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9080231C2C5D00085CF1 /* Distance.swift */; };
+		698F9084231C322200085CF1 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9083231C322200085CF1 /* HomeService.swift */; };
+		698F9086231C34EE00085CF1 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9085231C34EE00085CF1 /* HomeModule.swift */; };
 		A04E872FB79A16713B2E324A /* libPods-RebellionTripsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +93,15 @@
 		698F9059231C101700085CF1 /* SFUIText-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-RegularItalic.ttf"; sourceTree = "<group>"; };
 		698F905A231C101700085CF1 /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Semibold.ttf"; sourceTree = "<group>"; };
 		698F9067231C175E00085CF1 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		698F906E231C1A3100085CF1 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		698F9070231C1A3A00085CF1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		698F9075231C204100085CF1 /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		698F9078231C23F000085CF1 /* JSONDecoder+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Codable.swift"; sourceTree = "<group>"; };
+		698F907A231C2B6500085CF1 /* Pilot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pilot.swift; sourceTree = "<group>"; };
+		698F907E231C2BFF00085CF1 /* TripEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripEvent.swift; sourceTree = "<group>"; };
+		698F9080231C2C5D00085CF1 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		698F9083231C322200085CF1 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		698F9085231C34EE00085CF1 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		7FAA28F06D8DE44268ACE86A /* libPods-RebellionTrips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTrips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		900D25380710B50EAEB55CC6 /* Pods-RebellionTrips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebellionTrips.release.xcconfig"; path = "Target Support Files/Pods-RebellionTrips/Pods-RebellionTrips.release.xcconfig"; sourceTree = "<group>"; };
 		C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTripsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +210,10 @@
 			isa = PBXGroup;
 			children = (
 				698F9034231C02FC00085CF1 /* HomeCoordinator.swift */,
+				698F9085231C34EE00085CF1 /* HomeModule.swift */,
+				698F9082231C321000085CF1 /* Service */,
+				698F906A231C199700085CF1 /* Model */,
+				698F906B231C19BA00085CF1 /* ViewModel */,
 				698F902F231C02AF00085CF1 /* View */,
 			);
 			path = Home;
@@ -233,6 +255,7 @@
 		698F9036231C094900085CF1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				698F9072231C200100085CF1 /* Network */,
 				698F9047231C0F7E00085CF1 /* Style */,
 				698F9044231C0CF000085CF1 /* Navigation */,
 				698F9041231C0C4E00085CF1 /* Language */,
@@ -284,6 +307,42 @@
 				698F9058231C101700085CF1 /* SFUIText-SemiboldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		698F906A231C199700085CF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				698F906E231C1A3100085CF1 /* Trip.swift */,
+				698F9080231C2C5D00085CF1 /* Distance.swift */,
+				698F907E231C2BFF00085CF1 /* TripEvent.swift */,
+				698F907A231C2B6500085CF1 /* Pilot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		698F906B231C19BA00085CF1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				698F9070231C1A3A00085CF1 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		698F9072231C200100085CF1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				698F9075231C204100085CF1 /* ServiceClient.swift */,
+				698F9078231C23F000085CF1 /* JSONDecoder+Codable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		698F9082231C321000085CF1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				698F9083231C322200085CF1 /* HomeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		EFD600B4C10F5E8D5112835D /* Pods */ = {
@@ -461,15 +520,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698F9081231C2C5D00085CF1 /* Distance.swift in Sources */,
+				698F906F231C1A3100085CF1 /* Trip.swift in Sources */,
 				698F904D231C0FBD00085CF1 /* UIColor+Style.swift in Sources */,
 				698F902E231C026200085CF1 /* Coordinator.swift in Sources */,
 				698F9035231C02FC00085CF1 /* HomeCoordinator.swift in Sources */,
 				698F9046231C0E3900085CF1 /* UIViewController+Utils.swift in Sources */,
+				698F9084231C322200085CF1 /* HomeService.swift in Sources */,
 				698F9005231BFD1800085CF1 /* AppDelegate.swift in Sources */,
+				698F907F231C2BFF00085CF1 /* TripEvent.swift in Sources */,
+				698F9076231C204100085CF1 /* ServiceClient.swift in Sources */,
 				698F9043231C0C5C00085CF1 /* LocalizableString.swift in Sources */,
 				698F9032231C02F000085CF1 /* HomeViewController.swift in Sources */,
+				698F9079231C23F000085CF1 /* JSONDecoder+Codable.swift in Sources */,
+				698F9071231C1A3A00085CF1 /* HomeViewModel.swift in Sources */,
 				698F904B231C0FB100085CF1 /* UIFont+Style.swift in Sources */,
+				698F9086231C34EE00085CF1 /* HomeModule.swift in Sources */,
 				698F9068231C175E00085CF1 /* BaseNavigationController.swift in Sources */,
+				698F907B231C2B6500085CF1 /* Pilot.swift in Sources */,
 				698F9049231C0F8900085CF1 /* AppStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
