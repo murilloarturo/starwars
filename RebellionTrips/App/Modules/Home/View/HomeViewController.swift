@@ -11,8 +11,9 @@ import RxSwift
 import RxCocoa
 
 class HomeViewController: UIViewController {
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet private weak var collectionView: UICollectionView!
     private let viewModel: HomeViewModel
+    private let dataSource = HomeDataSource()
     private let disposeBag = DisposeBag()
     
     init(viewModel: HomeViewModel) {
@@ -34,6 +35,7 @@ class HomeViewController: UIViewController {
 private extension HomeViewController {
     func setup() {
         title = LocalizableString.lastTrips.localized.uppercased()
+        dataSource.collectionView = collectionView
         bind()
         viewModel.fetchTrips()
     }
@@ -42,7 +44,15 @@ private extension HomeViewController {
         viewModel
             .trips
             .drive(onNext: { [weak self] (trips) in
-                self?.label.text = "\(trips.count)"
+                self?.dataSource.trips = trips
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel
+            .error
+            .subscribeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] (error) in
+                //show error
             })
             .disposed(by: disposeBag)
     }

@@ -44,6 +44,11 @@
 		698F9081231C2C5D00085CF1 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9080231C2C5D00085CF1 /* Distance.swift */; };
 		698F9084231C322200085CF1 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9083231C322200085CF1 /* HomeService.swift */; };
 		698F9086231C34EE00085CF1 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9085231C34EE00085CF1 /* HomeModule.swift */; };
+		698F9089231C362800085CF1 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9088231C362800085CF1 /* HomeDataSource.swift */; };
+		698F908C231C363C00085CF1 /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F908A231C363B00085CF1 /* TripCell.swift */; };
+		698F908D231C363C00085CF1 /* TripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698F908B231C363B00085CF1 /* TripCell.xib */; };
+		698F908F231C3AA700085CF1 /* UIImageView+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F908E231C3AA700085CF1 /* UIImageView+Network.swift */; };
+		698F9092231C3CB700085CF1 /* UICollectionView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F9091231C3CB700085CF1 /* UICollectionView+Nib.swift */; };
 		A04E872FB79A16713B2E324A /* libPods-RebellionTripsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +107,11 @@
 		698F9080231C2C5D00085CF1 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		698F9083231C322200085CF1 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		698F9085231C34EE00085CF1 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		698F9088231C362800085CF1 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
+		698F908A231C363B00085CF1 /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
+		698F908B231C363B00085CF1 /* TripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripCell.xib; sourceTree = "<group>"; };
+		698F908E231C3AA700085CF1 /* UIImageView+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Network.swift"; sourceTree = "<group>"; };
+		698F9091231C3CB700085CF1 /* UICollectionView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Nib.swift"; sourceTree = "<group>"; };
 		7FAA28F06D8DE44268ACE86A /* libPods-RebellionTrips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTrips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		900D25380710B50EAEB55CC6 /* Pods-RebellionTrips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebellionTrips.release.xcconfig"; path = "Target Support Files/Pods-RebellionTrips/Pods-RebellionTrips.release.xcconfig"; sourceTree = "<group>"; };
 		C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTripsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +256,8 @@
 		698F902F231C02AF00085CF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				698F9087231C361900085CF1 /* Cells */,
+				698F9088231C362800085CF1 /* HomeDataSource.swift */,
 				698F9030231C02F000085CF1 /* HomeViewController.swift */,
 				698F9031231C02F000085CF1 /* HomeViewController.xib */,
 			);
@@ -255,6 +267,7 @@
 		698F9036231C094900085CF1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				698F9090231C3CA900085CF1 /* UIKit */,
 				698F9072231C200100085CF1 /* Network */,
 				698F9047231C0F7E00085CF1 /* Style */,
 				698F9044231C0CF000085CF1 /* Navigation */,
@@ -333,6 +346,7 @@
 			children = (
 				698F9075231C204100085CF1 /* ServiceClient.swift */,
 				698F9078231C23F000085CF1 /* JSONDecoder+Codable.swift */,
+				698F908E231C3AA700085CF1 /* UIImageView+Network.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -343,6 +357,23 @@
 				698F9083231C322200085CF1 /* HomeService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		698F9087231C361900085CF1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				698F908A231C363B00085CF1 /* TripCell.swift */,
+				698F908B231C363B00085CF1 /* TripCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		698F9090231C3CA900085CF1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				698F9091231C3CB700085CF1 /* UICollectionView+Nib.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		EFD600B4C10F5E8D5112835D /* Pods */ = {
@@ -446,6 +477,7 @@
 				698F903D231C0C3200085CF1 /* Localizable.strings in Resources */,
 				698F905E231C101700085CF1 /* SFUIText-Heavy.ttf in Resources */,
 				698F900C231BFD1900085CF1 /* Assets.xcassets in Resources */,
+				698F908D231C363C00085CF1 /* TripCell.xib in Resources */,
 				698F905D231C101700085CF1 /* SFUIText-HeavyItalic.ttf in Resources */,
 				698F9033231C02F000085CF1 /* HomeViewController.xib in Resources */,
 				698F9061231C101700085CF1 /* SFUIText-MediumItalic.ttf in Resources */,
@@ -533,8 +565,12 @@
 				698F9043231C0C5C00085CF1 /* LocalizableString.swift in Sources */,
 				698F9032231C02F000085CF1 /* HomeViewController.swift in Sources */,
 				698F9079231C23F000085CF1 /* JSONDecoder+Codable.swift in Sources */,
+				698F908C231C363C00085CF1 /* TripCell.swift in Sources */,
 				698F9071231C1A3A00085CF1 /* HomeViewModel.swift in Sources */,
+				698F9092231C3CB700085CF1 /* UICollectionView+Nib.swift in Sources */,
 				698F904B231C0FB100085CF1 /* UIFont+Style.swift in Sources */,
+				698F9089231C362800085CF1 /* HomeDataSource.swift in Sources */,
+				698F908F231C3AA700085CF1 /* UIImageView+Network.swift in Sources */,
 				698F9086231C34EE00085CF1 /* HomeModule.swift in Sources */,
 				698F9068231C175E00085CF1 /* BaseNavigationController.swift in Sources */,
 				698F907B231C2B6500085CF1 /* Pilot.swift in Sources */,

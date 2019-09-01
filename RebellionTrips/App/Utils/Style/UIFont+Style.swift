@@ -29,11 +29,15 @@ enum FontStyle: String {
 
 enum FontType {
     case bigTitle
+    case title
+    case subtitle
     
     var style: FontStyle {
         switch self {
-        case .bigTitle:
+        case .bigTitle, .title:
             return FontStyle.semibold
+        case .subtitle:
+            return FontStyle.medium
         }
     }
     
@@ -41,6 +45,10 @@ enum FontType {
         switch self {
         case .bigTitle:
             return 17
+        case .title:
+            return 15
+        case .subtitle:
+            return 13
         }
     }
 }

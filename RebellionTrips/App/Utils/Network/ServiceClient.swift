@@ -10,7 +10,8 @@ import Alamofire
 import RxSwift
 
 enum ServiceEndpoint: String {
-    case trips
+    case host = "https://starwars.kapten.com"
+    case trips = "/trips"
 }
 
 enum ServiceError: Int, Error {
@@ -53,8 +54,8 @@ protocol APIServible {
 class ServiceClient<Element: Codable>: APIServible {
     private var baseUrl: String
     
-    init(baseUrl: String = "https://starwars.kapten.com/") {
-        self.baseUrl = baseUrl
+    init(baseUrl: String? = nil) {
+        self.baseUrl = baseUrl ?? ServiceEndpoint.host.rawValue
     }
     
     func requestElement(verb: HttpVerb, endpoint: String, parameters: [String: Any]?) -> Single<Element> {

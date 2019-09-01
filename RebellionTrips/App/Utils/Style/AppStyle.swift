@@ -10,7 +10,10 @@ import UIKit
 
 final class AppStyle {
     static let palette = ColorPalette()
-    class func font(type: FontType) -> UIFont {
+    
+    private init() { }
+    
+    @nonobjc class func font(type: FontType) -> UIFont {
         return UIFont.appFont(type: type) ?? UIFont.defaultFont(size: type.size)
     }
 }
