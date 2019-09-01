@@ -10,12 +10,12 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
+    var homeCoordinator: HomeCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        setupRootViewController()
+        
         return true
     }
 
@@ -40,7 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+private extension AppDelegate {
+    func setupRootViewController() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        homeCoordinator = HomeCoordinator(window: window)
+        homeCoordinator?.start()
+    }
+}
