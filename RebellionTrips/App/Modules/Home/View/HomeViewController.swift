@@ -49,7 +49,6 @@ private extension HomeViewController {
         title = LocalizableString.lastTrips.localized.uppercased()
         dataSource.collectionView = collectionView
         bind()
-        viewModel.fetchTrips()
     }
     
     func bind() {

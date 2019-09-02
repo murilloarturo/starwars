@@ -25,7 +25,8 @@ target 'RebellionTrips' do
   
   target 'RebellionTripsTests' do
     inherit! :search_paths
-    pod 'OCMock', '~> 2.0.1'
+    pod 'RxBlocking'
+    pod 'RxTest'
   end
 end
 

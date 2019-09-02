@@ -10,11 +10,12 @@ import Foundation
 
 final class TripEvent: Codable {
     var planet: String
-    var planetImage: String
+    var planetImage: String?
     var date: Date
     
     var imageURL: URL? {
-        let url = "\(ServiceEndpoint.host.rawValue)\(planetImage)"
+        guard let imagePath = planetImage else { return nil }
+        let url = "\(ServiceEndpoint.host.rawValue)\(imagePath)"
         return URL(string: url)
     }
     

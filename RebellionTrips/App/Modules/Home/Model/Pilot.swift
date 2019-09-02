@@ -11,7 +11,7 @@ import Foundation
 final class Pilot: Codable {
     var name: String
     var avatarPath: String?
-    var rating: Float
+    var rating: Float?
     
     var avatarURL: URL? {
         guard let path = avatarPath else { return nil }
@@ -21,6 +21,7 @@ final class Pilot: Codable {
     }
     
     var hasRating: Bool {
+        guard let rating = rating else { return false }
         return rating > 0
     }
     

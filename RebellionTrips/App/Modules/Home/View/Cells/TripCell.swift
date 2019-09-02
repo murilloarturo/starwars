@@ -67,7 +67,7 @@ private extension TripCell {
         let hasRating = pilot.hasRating
         if hasRating {
             ratingHeightConstraint.constant = 25
-            ratingView.update(rating: pilot.rating)
+            ratingView.update(rating: pilot.rating ?? 0)
         } else {
             ratingHeightConstraint.constant = 0
         }

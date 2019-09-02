@@ -1,0 +1,14 @@
+{
+  "id": 1,
+  "pilot": {
+    "name": "Dark Vador",
+    "avatar": "/static/dark-vador.png",
+    "rating": 5.0
+  },
+  "duration": 19427000,
+  "pick_up": {
+    "name": "Yavin 4",
+    "picture": "/static/yavin-4.png",
+    "date": "2017-12-09T14:12:51Z"
+  }
+}

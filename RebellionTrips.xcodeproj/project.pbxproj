@@ -64,6 +64,11 @@
 		698F90B8231C95E900085CF1 /* TripDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698F90B6231C95E900085CF1 /* TripDetailCell.xib */; };
 		698F90BB231C966600085CF1 /* RatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F90B9231C966600085CF1 /* RatingCell.swift */; };
 		698F90BC231C966600085CF1 /* RatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698F90BA231C966600085CF1 /* RatingCell.xib */; };
+		698F90BF231CBB7800085CF1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F90BE231CBB7800085CF1 /* Utils.swift */; };
+		698F90C2231CBBE300085CF1 /* trip.json in Resources */ = {isa = PBXBuildFile; fileRef = 698F90C0231CBBE300085CF1 /* trip.json */; };
+		698F90C3231CBBE300085CF1 /* trips.json in Resources */ = {isa = PBXBuildFile; fileRef = 698F90C1231CBBE300085CF1 /* trips.json */; };
+		698F90C6231CBCE800085CF1 /* MockServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F90C5231CBCE800085CF1 /* MockServiceClient.swift */; };
+		698F90C8231CCC9C00085CF1 /* wrongTrip.json in Resources */ = {isa = PBXBuildFile; fileRef = 698F90C7231CCC9C00085CF1 /* wrongTrip.json */; };
 		A04E872FB79A16713B2E324A /* libPods-RebellionTripsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +147,11 @@
 		698F90B6231C95E900085CF1 /* TripDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripDetailCell.xib; sourceTree = "<group>"; };
 		698F90B9231C966600085CF1 /* RatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCell.swift; sourceTree = "<group>"; };
 		698F90BA231C966600085CF1 /* RatingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingCell.xib; sourceTree = "<group>"; };
+		698F90BE231CBB7800085CF1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		698F90C0231CBBE300085CF1 /* trip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trip.json; sourceTree = "<group>"; };
+		698F90C1231CBBE300085CF1 /* trips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trips.json; sourceTree = "<group>"; };
+		698F90C5231CBCE800085CF1 /* MockServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceClient.swift; sourceTree = "<group>"; };
+		698F90C7231CCC9C00085CF1 /* wrongTrip.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrongTrip.json; sourceTree = "<group>"; };
 		7FAA28F06D8DE44268ACE86A /* libPods-RebellionTrips.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTrips.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		900D25380710B50EAEB55CC6 /* Pods-RebellionTrips.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RebellionTrips.release.xcconfig"; path = "Target Support Files/Pods-RebellionTrips/Pods-RebellionTrips.release.xcconfig"; sourceTree = "<group>"; };
 		C9BDDB20D3BBC5F9E166E281 /* libPods-RebellionTripsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RebellionTripsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +221,8 @@
 		698F9018231BFD1900085CF1 /* RebellionTripsTests */ = {
 			isa = PBXGroup;
 			children = (
+				698F90C4231CBBE800085CF1 /* Mock */,
+				698F90BD231CBB6E00085CF1 /* Utils */,
 				698F9019231BFD1900085CF1 /* RebellionTripsTests.swift */,
 				698F901B231BFD1900085CF1 /* Info.plist */,
 			);
@@ -453,6 +465,25 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		698F90BD231CBB6E00085CF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				698F90BE231CBB7800085CF1 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		698F90C4231CBBE800085CF1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				698F90C5231CBCE800085CF1 /* MockServiceClient.swift */,
+				698F90C0231CBBE300085CF1 /* trip.json */,
+				698F90C1231CBBE300085CF1 /* trips.json */,
+				698F90C7231CCC9C00085CF1 /* wrongTrip.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		EFD600B4C10F5E8D5112835D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,6 +608,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698F90C3231CBBE300085CF1 /* trips.json in Resources */,
+				698F90C8231CCC9C00085CF1 /* wrongTrip.json in Resources */,
+				698F90C2231CBBE300085CF1 /* trip.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +709,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				698F901A231BFD1900085CF1 /* RebellionTripsTests.swift in Sources */,
+				698F90C6231CBCE800085CF1 /* MockServiceClient.swift in Sources */,
+				698F90BF231CBB7800085CF1 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

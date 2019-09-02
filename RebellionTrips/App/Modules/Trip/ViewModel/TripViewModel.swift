@@ -74,7 +74,7 @@ private extension TripViewModel {
     func durationDetail() -> TripDetailSection {
         let timeInterval = TimeInterval(trip.duration)
         let formatter = DateComponentsFormatter()
-        formatter.allowedUnits = timeInterval > 3600 ? [.day, .hour, .minute, .second] : [.minute, .second]
+        formatter.allowedUnits = timeInterval > 86400 ? [.day, .hour, .minute, .second] : (timeInterval > 3600 ? [.hour, .minute, .second] : [.minute, .second])
         formatter.unitsStyle = .positional
         formatter.zeroFormattingBehavior = .pad
         let duration = formatter.string(from: timeInterval) ?? ""

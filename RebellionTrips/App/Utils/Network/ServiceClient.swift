@@ -51,7 +51,7 @@ protocol APIServible {
     func requestElements(verb: HttpVerb, endpoint: String, parameters: [String: Any]?) -> Single<[Element]>
 }
 
-class ServiceClient<Element: Codable>: APIServible {
+open class ServiceClient<Element: Codable>: APIServible {
     private var baseUrl: String
     
     init(baseUrl: String? = nil) {

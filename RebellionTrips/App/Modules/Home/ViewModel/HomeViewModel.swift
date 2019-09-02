@@ -21,6 +21,8 @@ final class HomeViewModel {
     
     init(service: HomeService) {
         self.service = service
+        
+        fetchTrips()
     }
     
     func fetchTrips() {
