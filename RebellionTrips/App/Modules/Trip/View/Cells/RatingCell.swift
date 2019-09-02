@@ -17,8 +17,8 @@ class RatingCell: UICollectionViewCell {
     }
     @IBOutlet private weak var titleLabel: UILabel! {
         didSet {
-            headerLabel.font = AppStyle.font(type: .title)
-            headerLabel.textColor = AppStyle.palette.grey
+            titleLabel.font = AppStyle.font(type: .title)
+            titleLabel.textColor = AppStyle.palette.grey
         }
     }
     @IBOutlet private weak var ratingView: RatingView!
