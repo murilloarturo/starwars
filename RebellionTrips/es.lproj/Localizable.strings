@@ -13,4 +13,6 @@
 "duration" = "duración del viaje";
 "rating" = "calificación del piloto";
 "noRating" = "el usuario aún no calificó";
-"errorOccurred" = "Ocurrió un error obteniendo la información, intenta nuevamente.";
+"errorOccurred" = "¡La rebelión ha interrumpido nuestras comunicaciones!";
+"error" = "¡Alerta!";
+"ok" = "ok";

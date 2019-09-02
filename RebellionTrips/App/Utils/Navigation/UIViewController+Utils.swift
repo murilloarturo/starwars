@@ -26,4 +26,11 @@ extension UIViewController {
             dismiss(animated: true)
         }
     }
+    
+    func presentAlert(title: String,  message: String, buttonTitle: String, handler: ((UIAlertAction) -> Void)? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let action = UIAlertAction(title: buttonTitle, style: UIAlertAction.Style.default, handler: handler)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 }

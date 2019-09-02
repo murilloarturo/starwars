@@ -64,7 +64,9 @@ private extension HomeViewController {
             .error
             .subscribeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] (error) in
-                //show error
+                self?.presentAlert(title: LocalizableString.error.localized,
+                                   message: LocalizableString.errorOccurred.localized,
+                                   buttonTitle: LocalizableString.ok.localized.capitalized)
             })
             .disposed(by: disposeBag)
     }

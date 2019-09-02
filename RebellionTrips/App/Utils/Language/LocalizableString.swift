@@ -17,6 +17,8 @@ enum LocalizableString: String {
     case rating
     case noRating
     case errorOccurred
+    case error
+    case ok
     
     var localized: String {
         return localize()

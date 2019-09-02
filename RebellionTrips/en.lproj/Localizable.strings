@@ -13,4 +13,6 @@
 "duration" = "trip duration";
 "rating" = "pilot rating";
 "noRating" = "user didn’t rate yet";
-"errorOccurred" = "An errror occured please try again.";
+"errorOccurred" = "The rebellion has interrupted our communications!";
+"error" = "Alert!";
+"ok" = "ok";
