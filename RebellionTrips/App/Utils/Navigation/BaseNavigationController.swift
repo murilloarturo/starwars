@@ -16,13 +16,18 @@ final class BaseNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setNavigationBarHidden(false, animated: true)
-        navigationBar.isTranslucent = false
-        navigationBar.barTintColor = UIColor.black.withAlphaComponent(0.9)
-        navigationBar.backgroundColor = .black
-        view.backgroundColor = .black
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = true
+        view.backgroundColor = .clear
+        navigationBar.backgroundColor = .clear
         navigationBar.tintColor = .white
-        navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white,
-                                                                   .font: AppStyle.font(type: .bigTitle)]
+        navigationBar.titleTextAttributes = [.kern: 3,
+                                             .foregroundColor: UIColor.white,
+                                             .font: AppStyle.font(type: .header2)]
+    }
+    
+    func setNavigationColor(_ color: UIColor) {
+        navigationBar.backgroundColor = color
     }
 }

@@ -7,4 +7,10 @@
 */
 
 "lastTrips" = "Last Trips";
+"departure" = "Departure";
+"arrival" = "Arrival";
+"distance" = "trip distance";
+"duration" = "trip duration";
+"rating" = "pilot rating";
+"noRating" = "user didn’t rate yet";
 "errorOccurred" = "An errror occured please try again.";

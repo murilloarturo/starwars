@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import RxSwift
 
 final class HomeDataSource: NSObject {
+    let actionSubject = PublishSubject<HomeAction>()
     weak var collectionView: UICollectionView? {
         didSet {
             setupCollectionView()
@@ -46,7 +48,8 @@ extension HomeDataSource: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let trip = trips[indexPath.row]
+        actionSubject.onNext(HomeAction.show(trip: trip))
     }
 }
 

@@ -10,6 +10,12 @@ import Foundation
 
 enum LocalizableString: String {
     case lastTrips
+    case departure
+    case arrival
+    case distance
+    case duration
+    case rating
+    case noRating
     case errorOccurred
     
     var localized: String {

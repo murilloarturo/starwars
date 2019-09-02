@@ -59,7 +59,11 @@ private extension TripCell {
         if let url = pilot.avatarURL {
             pilotImageView.download(url: url)
         }
-        pilotNameLabel.text = pilot.name
+        let name = pilot.name.uppercased()
+        let string = NSMutableAttributedString(string: name, attributes: [.kern: 3,
+                                                                          .font: AppStyle.font(type: .title),
+                                                                          .foregroundColor: UIColor.white])
+        pilotNameLabel.attributedText = string
         let hasRating = pilot.hasRating
         if hasRating {
             ratingHeightConstraint.constant = 25

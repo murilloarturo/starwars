@@ -28,22 +28,27 @@ enum FontStyle: String {
 }
 
 enum FontType {
-    case bigTitle
+    case header1
+    case header2
     case title
     case subtitle
     
     var style: FontStyle {
         switch self {
-        case .bigTitle, .title:
-            return FontStyle.semibold
+        case .header1:
+            return .heavy
+        case .header2, .title:
+            return .semibold
         case .subtitle:
-            return FontStyle.medium
+            return .medium
         }
     }
     
     var size: CGFloat {
         switch self {
-        case .bigTitle:
+        case .header1:
+            return 28
+        case .header2:
             return 17
         case .title:
             return 15

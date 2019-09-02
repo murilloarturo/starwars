@@ -19,4 +19,23 @@ extension UIView {
         constraints.append(NSLayoutConstraint(item: self, attribute: .centerY, relatedBy: .equal, toItem: superview, attribute: .centerY, multiplier: 1, constant: 0))
         superview.addConstraints(constraints)
     }
+    
+    func setupRoundedCorners(radius: CGFloat, corners: UIRectCorner) {
+        layer.masksToBounds = true
+        var cornerMask = CACornerMask()
+        if(corners.contains(.topLeft)) {
+            cornerMask.insert(.layerMinXMinYCorner)
+        }
+        if(corners.contains(.topRight)) {
+            cornerMask.insert(.layerMaxXMinYCorner)
+        }
+        if(corners.contains(.bottomLeft)) {
+            cornerMask.insert(.layerMinXMaxYCorner)
+        }
+        if(corners.contains(.bottomRight)) {
+            cornerMask.insert(.layerMaxXMaxYCorner)
+        }
+        layer.cornerRadius = radius
+        layer.maskedCorners = cornerMask
+    }
 }

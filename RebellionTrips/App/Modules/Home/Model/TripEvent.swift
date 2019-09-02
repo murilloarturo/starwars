@@ -13,6 +13,11 @@ final class TripEvent: Codable {
     var planetImage: String
     var date: Date
     
+    var imageURL: URL? {
+        let url = "\(ServiceEndpoint.host.rawValue)\(planetImage)"
+        return URL(string: url)
+    }
+    
     enum CodingKeys: String, CodingKey {
         case planet = "name"
         case planetImage = "picture"

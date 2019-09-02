@@ -9,8 +9,12 @@
 import UIKit
 
 extension UIViewController {
+    var navigation: BaseNavigationController? {
+        return navigationController as? BaseNavigationController
+    }
+    
     func customBackButton() {
-        let image = #imageLiteral(resourceName: "backArrow").withRenderingMode(.alwaysTemplate)
+        let image = #imageLiteral(resourceName: "backIcon").withRenderingMode(.alwaysTemplate)
         let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(didTapBackButton))
         navigationItem.leftBarButtonItem = button
     }

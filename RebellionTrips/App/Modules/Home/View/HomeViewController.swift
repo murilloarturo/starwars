@@ -10,11 +10,18 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+enum HomeAction {
+    case show(trip: Trip)
+}
+
 class HomeViewController: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
     private let viewModel: HomeViewModel
     private let dataSource = HomeDataSource()
     private let disposeBag = DisposeBag()
+    var action: Observable<HomeAction> {
+        return dataSource.actionSubject.asObservable()
+    }
     
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
@@ -29,6 +36,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigation?.setNavigationColor(.black)
     }
 }
 

@@ -7,4 +7,10 @@
 */
 
 "lastTrips" = "Últimos viajes";
+"departure" = "Salida";
+"arrival" = "llegada";
+"distance" = "distancia del viaje";
+"duration" = "duración del viaje";
+"rating" = "calificación del piloto";
+"noRating" = "el usuario aún no calificó";
 "errorOccurred" = "Ocurrió un error obteniendo la información, intenta nuevamente.";
